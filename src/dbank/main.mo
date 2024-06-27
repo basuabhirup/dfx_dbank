@@ -4,14 +4,15 @@ import Float "mo:base/Float";
 
 actor DBank {
   stable var currentValue : Float = 300;
-  // currentValue := 100;
+  // currentValue := 1000;
+  Debug.print(debug_show (currentValue));
 
-  let id = 123214124;
+  // let id = 123214124;
 
   // Debug.print(debug_show(id));
 
   stable var startTime = Time.now();
-
+  // startTime := Time.now();
   Debug.print(debug_show (startTime));
 
   public func topUp(amount : Float) {
